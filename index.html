@@ -30,6 +30,7 @@
         
       <body>
     
+          <a id="button"></a>
           <div class="top-bar py-2">
               <div class="container">
               <div class="row">
@@ -85,7 +86,8 @@
               <div class="row my-auto">
                   <div class="col-md-6">
                   </div>
-                  <div class="col-md-6 get-started py-5">
+                  <div class="col-md-6 py-5 get-started">
+<!--
                       <div class=" py-5">
                       
                           <h3 class="light-text hero-head-font text-center">WE LOVE WEB DESIGN</h3>
@@ -93,7 +95,59 @@
                           <button class="btn goTo-button dark-text btn-font text-center mx-auto d-block mt-5">Get Started!   <span><i class="fa fa-long-arrow-right text-green"></i></span></button>
                       
                       </div>
-                  </div>
+-->
+                      
+                          
+                        <div id="carouselExampleIndicators" class="carousel slide py-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner bgCarousel-inner  d-flex container px-md-5">
+            <div class="carousel-item active text-center">
+                
+                 <div class=" py-5">
+                      
+                          <h3 class="light-text hero-head-font text-center">WE LOVE WEB DESIGN</h3>
+                          <p class="light-text text-font text-center pt-3">Creativity And Productivity Reaches At Peak Here</p>
+                          <button class="btn goTo-button dark-text btn-font text-center mx-auto d-block mt-5">Get Started!   <span><i class="fa fa-long-arrow-right text-green"></i></span></button>
+                      
+                      </div>
+            </div>
+            <div class="carousel-item text-center">
+                 <div class=" py-5">
+                      
+                          <h3 class="light-text hero-head-font text-center">WE LOVE WEB DESIGN</h3>
+                          <p class="light-text text-font text-center pt-3">Creativity And Productivity Reaches At Peak Here</p>
+                          <button class="btn goTo-button dark-text btn-font text-center mx-auto d-block mt-5">Get Started!   <span><i class="fa fa-long-arrow-right text-green"></i></span></button>
+                      
+                      </div>
+            </div>
+            <div class="carousel-item text-center">
+                 <div class=" py-5">
+                      
+                          <h3 class="light-text hero-head-font text-center">WE LOVE WEB DESIGN</h3>
+                          <p class="light-text text-font text-center pt-3">Creativity And Productivity Reaches At Peak Here</p>
+                          <button class="btn goTo-button dark-text btn-font text-center mx-auto d-block mt-5">Get Started!   <span><i class="fa fa-long-arrow-right text-green"></i></span></button>
+                      
+                      </div>
+            </div>
+            <div class="carousel-item text-center">
+               <div class=" py-5">
+                      
+                          <h3 class="light-text hero-head-font text-center">WE LOVE WEB DESIGN</h3>
+                          <p class="light-text text-font text-center pt-3">Creativity And Productivity Reaches At Peak Here</p>
+                          <button class="btn goTo-button dark-text btn-font text-center mx-auto d-block mt-5">Get Started!   <span><i class="fa fa-long-arrow-right text-green"></i></span></button>
+                      
+                      </div>
+            </div>
+        </div>
+    </div>
+           
+                      
+                      </div>           
+                      
                   </div>
                   </div>
               
@@ -163,7 +217,7 @@
               
               <div class="row">
               <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 about-content p-sm-3 p-5">
-                  <div class="about-texts m-md-5">
+                  <div class="about-texts m-md-5 pl-sm-4">
                   
                       
                   <h6 class="light-text about-tag">Conversion analytics and insights</h6>
@@ -669,21 +723,21 @@
                               <div class="col-6">
                               
                                   <ul class="list-unstyled footer-links">
-                                  <li>web designing</li>
-                                  <li>photography</li>
-                                  <li>corporate</li>
-                                    <li>Adevertisement</li>
-                                      <li>Application design</li>
+                                  <li><a href="#">web designing</a></li>
+                                  <li><a href="#">photography</a></li>
+                                  <li><a href="#">corporate</a></li>
+                                    <li><a href="#">Adevertisement</a></li>
+                                      <li><a href="#">Application design</a></li>
                                   </ul>
                                   
                               </div>
                                <div class="col-6">
                               <ul class="list-unstyled footer-links">
-                                  <li>Company terms</li>
-                                  <li>privacy policy</li>
-                                  <li>Refund policy</li>
-                                  <li>GDPR Compliance</li>
-                                  <li>contact legal</li>
+                                  <li><a href="#">Company terms</a></li>
+                                  <li><a href="#">privacy policy</a></li>
+                                  <li><a href="#">Refund policy</a></li>
+                                  <li><a href="#">GDPR Compliance</a></li>
+                                  <li><a href="#">contact legal</a></li>
                                   </ul>
                               </div>
                           
@@ -705,6 +759,10 @@
             </div>
                       <h6 class="light-text">Occasionally hear from us</h6>
                           
+                          <form class="d-flex">
+                          <input class="form-control w-50 footer-input" placeholder="type....." />
+                              <buttun class="btn send-btn light-text bg-light-green text-center">Send</buttun>
+                          </form>
                           
                       </div>
                       
@@ -726,6 +784,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+     <script type="text/javascript" src="./js/validator.min.js"></script>
+     <script type="text/javascript" src="./js/form-scripts.js"></script>     
+
+          
+    <script type="text/javascript">
+    $('body').append('<div style="" id="loadingDiv">' + '<svg viewBox="0 0 100 100" class="svg" xmlns="http://www.w3.org/2000/svg">\n' +
+        '  <circle class="circle1" cx="50" cy="50" r="45"/>\n' +
+        '</svg></div>');
+    $(window).on('load', function () {
+        setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    });
+
+    function removeLoader() {
+        $("#loadingDiv").fadeOut(500, function () {
+            // fadeOut complete. Remove the loading div
+            $("#loadingDiv1").remove(); //makes page more lightweight
+        });
+    }
+</script>
 
 
       </body>
