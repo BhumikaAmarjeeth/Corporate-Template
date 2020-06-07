@@ -75,9 +75,9 @@
             <span class="bar3"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="menu-content">
+        <div class="collapse navbar-collapse menu-content" id="menu-content">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item  active"><a href="#home" class="nav-link">Home <span
+                <li class="nav-item  active1"><a href="#home" class="nav-link">Home <span
                         class="sr-only">(current)</span></a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">Our Services</a></li>
@@ -952,33 +952,7 @@
     AOS.init();
 </script>
 <script>
-    $(".animation-example").on("mouseover", function() {
-        var anim = $(this).attr("data-anim");
-        $(this).removeClass(anim);
-        $(this).addClass(anim);
 
-        $(this).one(
-            "webkitAnimationEnd oanimationend MSAnimationEnd animationend",
-            function(e) {
-                // code to execute after transition ends
-                $(this).removeClass(anim);
-            }
-        );
-    });
-
-</script>
-<script>
-    $("#carouselExampleIndicators1").swipe({
-
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-            if (direction == 'left') $(this).carousel('next');
-            if (direction == 'right') $(this).carousel('prev');
-
-        },
-        allowPageScroll:"vertical"
-
-    });
 </script>
 </body>
 </html>

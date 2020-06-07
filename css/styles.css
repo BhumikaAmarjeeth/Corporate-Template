@@ -732,7 +732,11 @@ font-size: 33px;
         column-count: 4;
     }
 }
-
+@media only screen and (max-width: 767px){
+html, body{
+    overflow-x:hidden ;
+}
+}
 .image {
     display: block;
     width: 100%;
@@ -1270,4 +1274,13 @@ footer{
     -webkit-text-stroke-color: #70c280;
     font-family: popppins, sans-serif;
     font-weight: bold;
+}
+.active1 a{
+
+    color: #28a745 !important;
+    -webkit-transition: .9s all ease-out;
+    -moz-transition: .9s all ease-out;
+    /*transition: .9s all ease-out;*/
+    transition: width 2s ease-out;
+    opacity: 1;
 }
