@@ -360,7 +360,7 @@ opacity: 1;
 
 #home {
 
-    background-image: url(../images/four-woman-at-the-conference-room-1181421.png);
+    background-image: url(../images/hero-image.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -635,7 +635,7 @@ background-position:center ;
     background-repeat: no-repeat;
 }
 .women-img{
-    background-image: url(../images/smiling-woman-wearing-black-sweater-1587009.png);
+    background-image: url(../images/smiling-woman-wearing.jpg);
     background-size: cover;
     background-color: #828282;
     height: 100%;
@@ -968,6 +968,7 @@ pricing-tag{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 6px #00000029;
 border-radius: 3px;
+padding: 10px;
 }
 
 .form-control{
@@ -1169,6 +1170,16 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#stringPreloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    transform: scale(1.4);
+}
 
 
 @keyframes svg-animation {
@@ -1296,4 +1307,28 @@ footer{
     /*transition: .9s all ease-out;*/
     transition: width 2s ease-out;
     opacity: 1;
+}
+
+#loadingDiv {
+    position: fixed;
+
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    z-index: 999999;
+    overflow: hidden;
+}
+#msgSubmit{
+    font-size:15px;
+}
+
+
+footer ul li:hover a{
+    color:#fff;
+}
+
+.footer-social-link ul li:hover a .green-theme {
+    background: #fff;
 }
